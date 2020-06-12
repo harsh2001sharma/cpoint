@@ -1,0 +1,171 @@
+
+
+
+
+
+
+
+s
+/*########defaults########*/
+nav,header,footer{
+    display:block;
+    
+}
+
+
+body{
+    line-height: 1;
+    margin:0;
+    
+}
+
+/*nav bar*/
+nav{
+    width:100%;
+    margin:0;
+    
+}
+nav ul{
+    background-color:antiquewhite;
+    overflow:hidden;
+    margin:0;
+    padding:0;
+}
+ ul.topnav li{
+    list-style: none;
+     float:left;
+}
+
+ul.topnav li.topnav-right{
+    float:right;
+}
+ul.topnav li a{
+    display:block;
+    text-decoration:none;
+    font-size:16px;/*or we can do this for the height of the text*/
+    min-height:16px;
+    text-align: center;
+    padding:14px;
+    text-transform:uppercase;
+    color:darkblue;
+}
+ul.topnav li a:hover{
+    background-color:gray;
+    color:white;
+}
+ul.topnav li.dropdown-icon{
+    display: none;
+}
+
+.dropdown-content{
+    display:none;
+    position: absolute;
+    background-color: antiquewhite;
+    box-shadow: black;
+    z-index: 1;
+}
+
+    
+.drops {
+    display:block;
+}
+
+
+.drop-button{
+    font-size:20px;
+    padding:14px;
+    color: darkblue;
+
+}
+.dropdown-content a{
+    color:black;
+    display:block;
+    background-color:skyblue;
+}
+
+.dropdown-content a:hover{
+    color:black;
+}
+
+.drops:hover .dropdown-content{
+    display:block;
+
+
+}
+
+
+
+/*mobile*/
+@media screen and (max-width: 500px){
+	ul.topnav li:not(:nth-child(1)){
+        display: none;
+    }
+	ul.topnav li.dropdown-icon{
+		display: block;
+		float: right;
+    }
+
+
+    }
+    
+    ul.topnav.responsive li.dropdown-icon{
+        position: absolute;
+        top:0;
+        right:0;
+    }
+	
+	ul.topnav.responsive li.dropdown-icon {
+		position:absolute;
+		top:0;
+		right:none;
+	} 
+	
+	ul.topnav.responsive {
+		position: relative;
+	}
+	ul.topnav.responsive li {
+		display: inline;
+		float: none;
+	}
+	ul.topnav.responsive li a {
+		display: block;
+		text-align: left;
+    }
+    
+
+/*begin styling*/
+
+
+
+
+
+
+
+
+nav body{
+    text-align: center;
+    display:none;
+}
+h1{
+    text-align: center;
+    font-size:2.5rem;
+    color:darkgoldenrod;
+}
+h2{
+    text-align: center;
+    font-size:2rem;
+    color:lightcoral
+}
+h3{
+    text-align:center;
+    font-size:1.7rem;
+    color:blueviolet;
+
+}
+
+#contact img{
+    width: 25px;
+    display: block;
+    margin: 30px 0;
+}
+    
